@@ -86,7 +86,8 @@ extension DataSourceType {
     mutating func append(_ section: Section) {
         section.register { register($0) }
         sections.append(section)
-        update(.section(.insertion(lastIndexPath?.section ?? 0)))
+        guard let lastIndex = lastIndexPath else { return }
+        update(.section(.insertion(lastIndex.section)))
     }
 
     mutating func insert(_ section: Section, at index: Int) {
