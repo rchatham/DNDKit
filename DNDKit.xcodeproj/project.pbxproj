@@ -116,7 +116,6 @@
 				12FE2B2E21B9945B0082C9DA /* DNDKit */,
 				12FE2B1721B9943E0082C9DA /* DNDKit.h */,
 				12FE2B1821B9943F0082C9DA /* Info.plist */,
-				12FE2B5E21B997EB0082C9DA /* TableViewController.swift */,
 			);
 			path = DNDKit;
 			sourceTree = "<group>";
@@ -166,6 +165,7 @@
 		12FE2B3D21B9945B0082C9DA /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				12FE2B5E21B997EB0082C9DA /* TableViewController.swift */,
 				12FE2B3E21B9945B0082C9DA /* TableDataSource.swift */,
 				12FE2B3F21B9945B0082C9DA /* TableSection.swift */,
 				12FE2B4021B9945B0082C9DA /* TableDelegate.swift */,
