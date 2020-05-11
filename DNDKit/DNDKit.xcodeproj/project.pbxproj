@@ -30,6 +30,7 @@
 		12FE2B5721B9945B0082C9DA /* Table+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE2B4421B9945B0082C9DA /* Table+Protocols.swift */; };
 		12FE2B5821B9945B0082C9DA /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE2B4521B9945B0082C9DA /* ConfigurableCell.swift */; };
 		12FE2B5D21B996540082C9DA /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE2B5C21B996540082C9DA /* Collection+Extensions.swift */; };
+		12FE2B5F21B997EB0082C9DA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE2B5E21B997EB0082C9DA /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		12FE2B4421B9945B0082C9DA /* Table+Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Table+Protocols.swift"; sourceTree = "<group>"; };
 		12FE2B4521B9945B0082C9DA /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		12FE2B5C21B996540082C9DA /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		12FE2B5E21B997EB0082C9DA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				12FE2B2E21B9945B0082C9DA /* DNDKit */,
 				12FE2B1721B9943E0082C9DA /* DNDKit.h */,
 				12FE2B1821B9943F0082C9DA /* Info.plist */,
+				12FE2B5E21B997EB0082C9DA /* TableViewController.swift */,
 			);
 			path = DNDKit;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12FE2B5621B9945B0082C9DA /* TableDataModel.swift in Sources */,
+				12FE2B5F21B997EB0082C9DA /* TableViewController.swift in Sources */,
 				12FE2B5321B9945B0082C9DA /* TableSection.swift in Sources */,
 				12FE2B4A21B9945B0082C9DA /* CollectionSection.swift in Sources */,
 				12FE2B5521B9945B0082C9DA /* TableCell.swift in Sources */,
