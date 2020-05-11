@@ -21,11 +21,11 @@ class ViewController: TableViewController {
     }
 
     func cell(with text: String) -> TableCell {
-        return TableCell(cell: UITableViewCell.self, dataModel: text)
+        return TableCell(cell: TableViewCell.self, dataModel: text)
     }
 }
 
-extension UITableViewCell: ConfigurableCell {
+class TableViewCell: UITableViewCell, ConfigurableCell {
     public func configure(with text: String) {
         textLabel?.text = text
     }
