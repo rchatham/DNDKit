@@ -9,10 +9,15 @@
 import UIKit
 
 public struct TableSection: TableSectionType {
+    public var header: String? = nil
+    public var footer: String? = nil
+
     public var cells: [TableCell] = []
 
     public init() {}
-    public init(cells: [TableCell]) {
+    public init(header: String? = nil, cells: [TableCell] = [], footer: String? = nil) {
+        self.header = header
         self.cells = cells
+        self.footer = footer
     }
 }

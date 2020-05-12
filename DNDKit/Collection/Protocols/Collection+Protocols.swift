@@ -43,6 +43,8 @@ public extension CollectionDataSourceType {
                 case .deletion(let index):
                     self?.parentView.deleteSections([index])
                 }
+            case .reload:
+                self?.parentView.reloadData()
             }
         }
     }

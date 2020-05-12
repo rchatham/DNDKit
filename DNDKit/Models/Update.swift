@@ -9,6 +9,7 @@
 import Foundation
 
 public enum Update {
+    case reload
     case cell(CellUpdate)
     case section(SectionUpdate)
 }

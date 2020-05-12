@@ -65,10 +65,11 @@ public extension DataSourceType {
             var section = Section()
             section.append(cell)
             sections.append(section)
+            update(.section(.insertion(numberOfSections() - 1)))
         } else {
-            sections[lastIndexPath?.section ?? 0].append(cell)
+            sections[numberOfSections() - 1].append(cell)
+            update(.cell(.insertion(lastIndexPath!)))
         }
-        update(.cell(.insertion(lastIndexPath!)))
     }
 
     mutating func insert(_ cell: Section.Cell, at indexPath: IndexPath) {
@@ -86,8 +87,7 @@ public extension DataSourceType {
     mutating func append(_ section: Section) {
         section.register { register($0) }
         sections.append(section)
-        guard let lastIndex = lastIndexPath else { return }
-        update(.section(.insertion(lastIndex.section)))
+        update(.section(.insertion(numberOfSections() - 1)))
     }
 
     mutating func insert(_ section: Section, at index: Int) {

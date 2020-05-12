@@ -9,24 +9,41 @@
 import UIKit
 import DNDKit
 
-class ViewController: TableViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+class ViewController: UITableViewController {
 
-        dataModel.append(cell(with: "What's up?"))
-        dataModel.append(cell(with: "Not much! What's up with you?"))
-        dataModel.append(cell(with: "Chillingggg..."))
-        dataModel.append(cell(with: "On my way man!"))
+
+    open var dataModel: TableDataModel!
+
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+
+//        tableView.style = .grouped
+
+        dataModel = TableDataModel(tableView: tableView)
+
+
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
+            self.dataModel.append(self.cell(with: "What's up?"))
+        }
+        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (timer) in
+            self.dataModel.append(self.cell(with: "Not much! What's up with you?"))
+        }
+        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (timer) in
+            self.dataModel.append(self.cell(with: "Chillingggg..."))
+        }
+        Timer.scheduledTimer(withTimeInterval: 4.0, repeats: false) { (timer) in
+            self.dataModel.append(self.cell(with: "On my way man!"))
+        }
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { (timer) in
+            self.dataModel.append(TableSection(header: "hellllooooo"))
+        }
+        Timer.scheduledTimer(withTimeInterval: 6.0, repeats: false) { (timer) in
+            self.dataModel.append(self.cell(with: "Cell in a new section"))
+        }
+
     }
 
     func cell(with text: String) -> TableCell {
         return TableCell(cell: TableViewCell.self, dataModel: text)
-    }
-}
-
-class TableViewCell: UITableViewCell, ConfigurableCell {
-    public func configure(with text: String) {
-        textLabel?.text = text
     }
 }

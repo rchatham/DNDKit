@@ -30,4 +30,12 @@ public final class TableDataSource: NSObject, TableDataSourceType {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return cellForRowAt(indexPath)
     }
+
+    public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[safe: section]?.header
+    }
+
+    public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return sections[safe: section]?.footer
+    }
 }

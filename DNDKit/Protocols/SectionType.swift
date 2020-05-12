@@ -12,7 +12,7 @@ public protocol SectionType {
     associatedtype Cell: CellType
 
     init()
-    init(cells: [Cell])
+//    init(cells: [Cell])
 
     var cells: [Cell] { get set }
     func register(_ register: (Cell) -> Void)

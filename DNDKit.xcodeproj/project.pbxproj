@@ -17,6 +17,7 @@
 		129961EF2469EBF400A88ADD /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129961EE2469EBF400A88ADD /* ExampleUITests.swift */; };
 		129961FB2469EC0300A88ADD /* DNDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FE2B1421B9943E0082C9DA /* DNDKit.framework */; };
 		129961FC2469EC0300A88ADD /* DNDKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12FE2B1421B9943E0082C9DA /* DNDKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12996224246A21BB00A88ADD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12996223246A21BB00A88ADD /* TableViewCell.swift */; };
 		12FE2B1E21B9943F0082C9DA /* DNDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FE2B1421B9943E0082C9DA /* DNDKit.framework */; };
 		12FE2B2321B9943F0082C9DA /* DNDKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE2B2221B9943F0082C9DA /* DNDKitTests.swift */; };
 		12FE2B2521B9943F0082C9DA /* DNDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 12FE2B1721B9943E0082C9DA /* DNDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,6 +104,7 @@
 		129961EA2469EBF400A88ADD /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		129961EE2469EBF400A88ADD /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		129961F02469EBF400A88ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12996223246A21BB00A88ADD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		12FE2B1421B9943E0082C9DA /* DNDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12FE2B1721B9943E0082C9DA /* DNDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNDKit.h; sourceTree = "<group>"; };
 		12FE2B1821B9943F0082C9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				12FE2B4021B9945B0082C9DA /* TableDelegate.swift */,
 				12FE2B4121B9945B0082C9DA /* TableCell.swift */,
 				12FE2B4221B9945B0082C9DA /* TableDataModel.swift */,
+				12996223246A21BB00A88ADD /* TableViewCell.swift */,
 				12FE2B4321B9945B0082C9DA /* Protocols */,
 			);
 			path = Table;
@@ -306,10 +309,10 @@
 		12FE2B5921B994C80082C9DA /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				12FE2B3A21B9945B0082C9DA /* DataSourceType.swift */,
-				12FE2B3B21B9945B0082C9DA /* SectionType.swift */,
 				12FE2B3C21B9945B0082C9DA /* DataModelType.swift */,
 				12FE2B3021B9945B0082C9DA /* DelegateType.swift */,
+				12FE2B3A21B9945B0082C9DA /* DataSourceType.swift */,
+				12FE2B3B21B9945B0082C9DA /* SectionType.swift */,
 				12FE2B2F21B9945B0082C9DA /* CellType.swift */,
 				12FE2B4521B9945B0082C9DA /* ConfigurableCell.swift */,
 			);
@@ -577,6 +580,7 @@
 				12FE2B4621B9945B0082C9DA /* CellType.swift in Sources */,
 				12FE2B4C21B9945B0082C9DA /* CollectionDataModel.swift in Sources */,
 				12FE2B4821B9945B0082C9DA /* CollectionCell.swift in Sources */,
+				12996224246A21BB00A88ADD /* TableViewCell.swift in Sources */,
 				12FE2B4F21B9945B0082C9DA /* DataSourceType.swift in Sources */,
 				12FE2B5221B9945B0082C9DA /* TableDataSource.swift in Sources */,
 				12FE2B4D21B9945B0082C9DA /* Collection+Protocols.swift in Sources */,

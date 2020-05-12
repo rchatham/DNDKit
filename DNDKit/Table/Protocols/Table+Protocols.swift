@@ -44,6 +44,8 @@ public extension TableDataSourceType {
                 case .deletion(let index):
                     self?.parentView.deleteSections([index], with: .fade)
                 }
+            case .reload:
+                self?.parentView.reloadData()
             }
             self?.parentView.endUpdates()
         }

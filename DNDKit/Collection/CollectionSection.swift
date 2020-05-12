@@ -10,9 +10,5 @@ import Foundation
 
 public struct CollectionSection: CollectionSectionType {
     public var cells: [CollectionCell] = []
-
     public init() {}
-    public init(cells: [CollectionCell]) {
-        self.cells = cells
-    }
 }
