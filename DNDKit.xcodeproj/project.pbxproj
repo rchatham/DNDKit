@@ -265,11 +265,11 @@
 		12FE2B3121B9945B0082C9DA /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				12FE2B3221B9945B0082C9DA /* CollectionCell.swift */,
+				12FE2B3621B9945B0082C9DA /* CollectionDataModel.swift */,
+				12FE2B3521B9945B0082C9DA /* CollectionDelegate.swift */,
 				12FE2B3321B9945B0082C9DA /* CollectionDataSource.swift */,
 				12FE2B3421B9945B0082C9DA /* CollectionSection.swift */,
-				12FE2B3521B9945B0082C9DA /* CollectionDelegate.swift */,
-				12FE2B3621B9945B0082C9DA /* CollectionDataModel.swift */,
+				12FE2B3221B9945B0082C9DA /* CollectionCell.swift */,
 				12FE2B3721B9945B0082C9DA /* Protocols */,
 			);
 			path = Collection;
@@ -287,11 +287,11 @@
 			isa = PBXGroup;
 			children = (
 				12FE2B5E21B997EB0082C9DA /* TableViewController.swift */,
+				12FE2B4221B9945B0082C9DA /* TableDataModel.swift */,
+				12FE2B4021B9945B0082C9DA /* TableDelegate.swift */,
 				12FE2B3E21B9945B0082C9DA /* TableDataSource.swift */,
 				12FE2B3F21B9945B0082C9DA /* TableSection.swift */,
-				12FE2B4021B9945B0082C9DA /* TableDelegate.swift */,
 				12FE2B4121B9945B0082C9DA /* TableCell.swift */,
-				12FE2B4221B9945B0082C9DA /* TableDataModel.swift */,
 				12996223246A21BB00A88ADD /* TableViewCell.swift */,
 				12FE2B4321B9945B0082C9DA /* Protocols */,
 			);

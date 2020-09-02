@@ -31,11 +31,41 @@ public final class TableDataSource: NSObject, TableDataSourceType {
         return cellForRowAt(indexPath)
     }
 
+    /// Section Header
     public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sections[safe: section]?.header
     }
 
+    /// Section Footer
     public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return sections[safe: section]?.footer
+    }
+
+    // Needs work
+//    public func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+//        return 0
+//    }
+
+    public func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return sections[indexPath.section].cells[indexPath.row].canMoveRow
+    }
+
+    public func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+
+    }
+
+    public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return sections[indexPath.section].cells[indexPath.row].canEditRow
+    }
+
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            fallthrough
+        case .insert:
+            fallthrough
+        case .none:
+            break
+        }
     }
 }

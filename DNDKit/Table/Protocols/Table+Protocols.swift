@@ -10,7 +10,10 @@ import UIKit
 
 public protocol TableCellType: CellType where CellView: UITableViewCell, ParentView: UITableView {}
 
-public protocol TableSectionType: SectionType where Cell: TableCellType {}
+public protocol TableSectionType: SectionType where Cell: TableCellType {
+    var header: String? { get }
+    var footer: String? { get }
+}
 
 /// TableDataSourceType
 public protocol TableDataSourceType: DataSourceType, UITableViewDataSource where Section: TableSectionType {
