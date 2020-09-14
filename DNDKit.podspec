@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "DNDKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.license      = "MIT" 
   spec.homepage     = "https://github.com/rchatham/DNDKit"
   spec.authors      = { "Reid Chatham" => "reid.chatham@gmail.com" }
