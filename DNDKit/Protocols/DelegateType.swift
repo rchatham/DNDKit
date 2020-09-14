@@ -23,6 +23,6 @@ public extension DelegateType {
     }
 
     func didSelectCell(at indexPath: IndexPath) {
-        sections[safe: indexPath.section]?.cells[safe: indexPath.row]?.didSelectCell()
+        sections[safe: indexPath.section]?.cells[safe: indexPath.row]?.didSelectCell(dataSource.parentView)
     }
 }

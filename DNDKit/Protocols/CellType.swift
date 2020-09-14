@@ -23,7 +23,7 @@ public protocol CellType {
     var dequeue: (ParentView, IndexPath) -> CellView { get }
     var configure: (CellView) -> Void { get }
     var register: (ParentView) -> Void { get }
-    var didSelectCell: () -> Void { get }
+    var didSelectCell: (ParentView) -> Void { get }
 }
 
 public extension CellType {

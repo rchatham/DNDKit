@@ -13,7 +13,7 @@ public struct TableCell: TableCellType {
         (cell: Cell.Type,
          dataModel: Cell.DataObject,
          reuseIdentifier: String? = nil,
-         didSelectCell: @escaping () -> Void = {},
+         didSelectCell: @escaping (UITableView) -> Void = {_ in},
          canMoveRow: Bool = false,
          canEditRow: Bool = false,
          editActions: [UITableViewRowAction]? = nil) {
@@ -36,7 +36,7 @@ public struct TableCell: TableCellType {
     public let configure: (UITableViewCell) -> Void
     public let register: (UITableView) -> Void
     public let getData: () -> Any
-    public let didSelectCell: () -> Void
+    public let didSelectCell: (UITableView) -> Void
     public let canMoveRow: Bool
     public let editActions: [UITableViewRowAction]?
     var canEditRow: Bool { return (editActions?.count ?? 0) > 0 }
