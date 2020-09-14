@@ -9,21 +9,15 @@
 import UIKit
 import DNDKit
 
-class ViewController: UITableViewController {
-
-
-    open var dataModel: TableDataModel!
+class ViewController: TableViewController {
 
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-//        tableView.style = .grouped
-
-        dataModel = TableDataModel(tableView: tableView)
-
-
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
-            self.dataModel.append(self.cell(with: "What's up?"))
+            self.dataModel.append(self.cell(with: "What's up?", editActions: [self.action(title: "Test", selection: { (action, indexPath) in
+
+            })]))
         }
         Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (timer) in
             self.dataModel.append(self.cell(with: "Not much! What's up with you?"))
@@ -40,10 +34,5 @@ class ViewController: UITableViewController {
         Timer.scheduledTimer(withTimeInterval: 6.0, repeats: false) { (timer) in
             self.dataModel.append(self.cell(with: "Cell in a new section"))
         }
-
-    }
-
-    func cell(with text: String) -> TableCell {
-        return TableCell(cell: TableViewCell.self, dataModel: text)
     }
 }

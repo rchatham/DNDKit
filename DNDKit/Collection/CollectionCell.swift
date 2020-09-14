@@ -13,7 +13,7 @@ public struct CollectionCell: CollectionCellType {
         (cell: Cell.Type,
          dataModel: DataObject,
          reuseIdentifier: String? = nil,
-         didSelectCell: @escaping () -> Void = {})
+         didSelectCell: @escaping (UICollectionView) -> Void = {_ in})
         where Cell: ConfigurableCell, DataObject == Cell.DataObject {
 
             let reuseIdentifier = reuseIdentifier ?? String(describing: Cell.self)
@@ -28,5 +28,5 @@ public struct CollectionCell: CollectionCellType {
     public let dequeue: (UICollectionView, IndexPath) -> UICollectionViewCell
     public let configure: (UICollectionViewCell) -> Void
     public let register: (UICollectionView) -> Void
-    public let didSelectCell: () -> Void
+    public let didSelectCell: (UICollectionView) -> Void
 }
