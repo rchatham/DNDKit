@@ -6,6 +6,6 @@ Pod::Spec.new do |spec|
   spec.authors      = { "Reid Chatham" => "reid.chatham@gmail.com" }
   spec.summary      = "Datasource and Delegate Kit."
   spec.source       = { :git => "https://github.com/rchatham/DNDKit.git", :tag => "#{spec.version}" }
-  spec.platform     = :ios, "8.0"
+  spec.platform     = :ios, "12.1"
   spec.source_files = "DNDKit/*"
 end

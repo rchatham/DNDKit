@@ -463,9 +463,11 @@
 					};
 					12FE2B1321B9943E0082C9DA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1160;
 					};
 					12FE2B1C21B9943F0082C9DA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -907,7 +909,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.reidchatham.DNDKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -932,7 +934,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.reidchatham.DNDKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -951,7 +953,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reidchatham.DNDKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -970,7 +972,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reidchatham.DNDKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
