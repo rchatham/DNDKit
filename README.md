@@ -38,6 +38,6 @@ extension UITableViewCell: ConfigurableCell {
 
 #### [Cocoapods](https://cocoapods.org/pods/DNDKit)
 
-`"pod DNDKit"`
+`pod 'DNDKit'`
 
 
