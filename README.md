@@ -33,3 +33,11 @@ extension UITableViewCell: ConfigurableCell {
     }
 }
 ```
+
+### Installation
+
+#### [Cocoapods](https://cocoapods.org/pods/DNDKit)
+
+`"pod DNDKit"`
+
+
