@@ -77,7 +77,11 @@ extension ConfigurableCell where Self: UITableViewCell {
         separatorInset = data.separatorInset
         shouldIndentWhileEditing = data.shouldIndentWhileEditing
         showsReorderControl = data.showsReorderControl
-        userInteractionEnabledWhileDragging = data.userInteractionEnabledWhileDragging
+        if #available(iOS 11.0, *) {
+            userInteractionEnabledWhileDragging = data.userInteractionEnabledWhileDragging
+        } else {
+            // Fallback on earlier versions
+        }
         accessibilityIdentifier = data.accessibilityIdentifier
         accessibilityLabel = data.accessibilityIdentifier
     }

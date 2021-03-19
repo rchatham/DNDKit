@@ -72,6 +72,7 @@ public final class CollectionDelegate: NSObject, CollectionDelegateType {
     public func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
         return false
     }
+    @available(iOS 11.0, *)
     public func collectionView(_ collectionView: UICollectionView, shouldSpringLoadItemAt indexPath: IndexPath, with context: UISpringLoadedInteractionContext) -> Bool {
         return false
     }
