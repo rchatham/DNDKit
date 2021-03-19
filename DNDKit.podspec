@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "DNDKit"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "Datasource and Delegate Kit."
   spec.homepage     = "http://github.com/rchatham/DNDKit"
   spec.license      = "MIT"
