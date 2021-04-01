@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "DNDKit"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Datasource and Delegate Kit."
   spec.homepage     = "http://github.com/rchatham/DNDKit"
   spec.license      = "MIT"
   spec.author             = { "Reid Chatham" => "reid.chatham@gmail.com" }
   spec.social_media_url   = "http://twitter.com/reid_thinks"
-  spec.platform     = :ios, "12.1"
+  spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/rchatham/DNDKit.git", :tag => "#{spec.version}" }
   spec.source_files  = "DNDKit/**/*.swift"
   spec.swift_versions = "5.0"
