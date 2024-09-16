@@ -1,11 +1,12 @@
 //
 //  Table+Protocols.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 11/13/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public protocol TableCellType: CellType where CellView: UITableViewCell, ParentView: UITableView {}
@@ -66,3 +67,5 @@ public extension TableDataModelType {
         return tableView
     }
 }
+
+#endif

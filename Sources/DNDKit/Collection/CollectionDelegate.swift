@@ -1,11 +1,13 @@
 //
 //  CollectionDelegate.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 11/13/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+
+#if os(iOS)
 import UIKit
 
 public final class CollectionDelegate: NSObject, CollectionDelegateType {
@@ -108,3 +110,4 @@ public final class CollectionDelegate: NSObject, CollectionDelegateType {
 
     }
 }
+#endif

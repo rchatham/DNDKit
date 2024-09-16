@@ -1,12 +1,12 @@
 //
 //  DelegateType.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/24/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public protocol DelegateType {
     associatedtype DataSource: DataSourceType
@@ -23,6 +23,10 @@ public extension DelegateType {
     }
 
     func didSelectCell(at indexPath: IndexPath) {
+        #if os(iOS)
         sections[safe: indexPath.section]?.cells[safe: indexPath.row]?.didSelectCell(dataSource.parentView)
+        #elseif os(macOS)
+        sections[safe: indexPath.section]?.cells[safe: indexPath.item]?.didSelectCell(dataSource.parentView)
+        #endif
     }
 }

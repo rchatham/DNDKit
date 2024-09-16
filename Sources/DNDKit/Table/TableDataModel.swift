@@ -1,11 +1,12 @@
 //
 //  TableViewDataModel.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/24/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public struct TableDataModel: TableDataModelType {
@@ -25,3 +26,5 @@ public struct TableDataModel: TableDataModelType {
     }
     public private(set) var delegate: TableDelegate
 }
+
+#endif

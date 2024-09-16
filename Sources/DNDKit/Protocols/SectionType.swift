@@ -1,12 +1,12 @@
 //
 //  SectionType.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/19/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public protocol SectionType {
     associatedtype Cell: CellType

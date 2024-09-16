@@ -1,11 +1,12 @@
 //
 //  CollectionCell.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 11/13/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public struct CollectionCell: CollectionCellType {
@@ -30,3 +31,5 @@ public struct CollectionCell: CollectionCellType {
     public let register: (UICollectionView) -> Void
     public let didSelectCell: (UICollectionView) -> Void
 }
+
+#endif

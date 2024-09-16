@@ -1,12 +1,12 @@
 //
 //  DataSourceType.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/19/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 /// DataSourceType
 public protocol DataSourceType {
@@ -51,7 +51,11 @@ public extension DataSourceType {
     }
 
     func cellForRowAt(_ indexPath: IndexPath) -> Section.Cell.CellView {
+        #if os(iOS)
         let model = sections[indexPath.section].cells[indexPath.row]
+        #elseif os(macOS)
+        let model = sections[indexPath.section].cells[indexPath.item]
+        #endif
         let cell = model.dequeue(parentView, indexPath)
         model.configure(cell)
         return cell
@@ -74,13 +78,21 @@ public extension DataSourceType {
 
     mutating func insert(_ cell: Section.Cell, at indexPath: IndexPath) {
         register(cell)
+        #if os(iOS)
         sections[safe: indexPath.section]?.insert(cell, at: indexPath.row)
+        #elseif os(macOS)
+        sections[safe: indexPath.section]?.insert(cell, at: indexPath.item)
+        #endif
         update(.cell(.insertion(indexPath)))
     }
 
     mutating func replace(_ cell: Section.Cell, at indexPath: IndexPath) {
         register(cell)
+        #if os(iOS)
         sections[safe: indexPath.section]?.replace(cell, at: indexPath.row)
+        #elseif os(macOS)
+        sections[safe: indexPath.section]?.replace(cell, at: indexPath.item)
+        #endif
         update(.cell(.modification(indexPath)))
     }
 
@@ -103,7 +115,11 @@ public extension DataSourceType {
     }
 
     mutating func removeCell(at indexPath: IndexPath) {
+        #if os(iOS)
         sections[indexPath.section].remove(at: indexPath.row)
+        #elseif os(macOS)
+        sections[indexPath.section].remove(at: indexPath.item)
+        #endif
         update(.cell(.deletion(indexPath)))
     }
 

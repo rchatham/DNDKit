@@ -1,16 +1,25 @@
 //
 //  CellType.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/19/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
+#elseif os(macOS)
+import Cocoa
+#endif
 
 public protocol CellType {
+#if os(iOS)
     associatedtype CellView: UIView
     associatedtype ParentView: UIView
+#elseif os(macOS)
+    associatedtype CellView: NSView
+    associatedtype ParentView: NSView
+#endif
 
 //    init<Cell: ConfigurableCell, DataObject>
 //        (cell: Cell.Type,

@@ -1,12 +1,12 @@
 //
 //  DataModelType.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/24/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public protocol DataModelType {
     associatedtype Delegate: DelegateType

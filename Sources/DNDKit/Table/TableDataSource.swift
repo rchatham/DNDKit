@@ -1,11 +1,12 @@
 //
 //  TableViewDataSource.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/18/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public final class TableDataSource: NSObject, TableDataSourceType {
@@ -67,3 +68,5 @@ public final class TableDataSource: NSObject, TableDataSourceType {
         }
     }
 }
+
+#endif

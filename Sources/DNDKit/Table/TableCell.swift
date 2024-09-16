@@ -1,11 +1,12 @@
 //
 //  TableCell.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/18/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public struct TableCell: TableCellType {
@@ -41,3 +42,5 @@ public struct TableCell: TableCellType {
     public let editActions: [UITableViewRowAction]?
     var canEditRow: Bool { return (editActions?.count ?? 0) > 0 }
 }
+
+#endif

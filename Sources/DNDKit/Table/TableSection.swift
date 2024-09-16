@@ -1,12 +1,13 @@
 //
 //  TableVewSection.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/18/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
-import UIKit
+#if os(iOS)
+import Foundation
 
 public struct TableSection: TableSectionType {
     public var header: String? = nil
@@ -21,3 +22,5 @@ public struct TableSection: TableSectionType {
         self.footer = footer
     }
 }
+
+#endif

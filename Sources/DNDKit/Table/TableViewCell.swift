@@ -6,6 +6,7 @@
 //  Copyright © 2020 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public class TableViewCell: UITableViewCell, ConfigurableCell {}
@@ -86,3 +87,5 @@ extension ConfigurableCell where Self: UITableViewCell {
         accessibilityLabel = data.accessibilityIdentifier
     }
 }
+
+#endif

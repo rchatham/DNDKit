@@ -1,11 +1,12 @@
 //
 //  TableViewDelegate.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 10/24/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public final class TableDelegate: NSObject, TableDelegateType {
@@ -96,3 +97,5 @@ public final class TableDelegate: NSObject, TableDelegateType {
 //    @available(iOS 13.0, *)
 //    public func tableView(_ tableView: UITableView, previewForHighlightingContextMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview? { return nil }
 }
+
+#endif

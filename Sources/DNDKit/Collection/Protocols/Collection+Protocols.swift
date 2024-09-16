@@ -1,11 +1,12 @@
 //
 //  Collection+Protocols.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 11/13/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public protocol CollectionCellType: CellType where CellView: UICollectionViewCell, ParentView: UICollectionView {}
@@ -61,3 +62,5 @@ public extension CollectionDataModelType {
         return collectionView
     }
 }
+
+#endif

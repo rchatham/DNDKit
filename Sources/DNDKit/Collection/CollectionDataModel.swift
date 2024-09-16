@@ -1,11 +1,12 @@
 //
 //  CollectionDataModel.swift
-//  hermes-speak
+//  CoordinatorType
 //
 //  Created by Reid Chatham on 11/13/18.
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public struct CollectionDataModel: CollectionDataModelType {
@@ -25,3 +26,5 @@ public struct CollectionDataModel: CollectionDataModelType {
     }
     public private(set) var delegate: CollectionDelegate
 }
+
+#endif

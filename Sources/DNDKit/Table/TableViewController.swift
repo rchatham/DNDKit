@@ -6,6 +6,7 @@
 //  Copyright © 2018 Reid Chatham. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 open class TableViewController: UITableViewController {
@@ -37,3 +38,5 @@ open class TableViewController: UITableViewController {
         return action
     }
 }
+
+#endif
