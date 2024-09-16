@@ -60,12 +60,10 @@ public final class TableDataSource: NSObject, TableDataSourceType {
 
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         switch editingStyle {
-        case .delete:
-            fallthrough
-        case .insert:
-            fallthrough
-        case .none:
-            break
+        case .delete: fallthrough
+        case .insert: fallthrough
+        case .none: break
+        @unknown default: fatalError()
         }
     }
 }
