@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10BD8C42CF8E3620021E82D /* DNDKit in Frameworks */ = {isa = PBXBuildFile; productRef = B10BD8C32CF8E3620021E82D /* DNDKit */; };
 		B14EE54F2C98C38300BAC898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EE54E2C98C38300BAC898 /* AppDelegate.swift */; };
 		B14EE5512C98C38300BAC898 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EE5502C98C38300BAC898 /* SceneDelegate.swift */; };
 		B14EE5532C98C38300BAC898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14EE5522C98C38300BAC898 /* ViewController.swift */; };
@@ -14,7 +15,6 @@
 		B14EE5582C98C38500BAC898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14EE5572C98C38500BAC898 /* Assets.xcassets */; };
 		B14EE55B2C98C38500BAC898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14EE5592C98C38500BAC898 /* LaunchScreen.storyboard */; };
 		B14EE5642C98C40300BAC898 /* DNDKit in Frameworks */ = {isa = PBXBuildFile; productRef = B14EE5632C98C40300BAC898 /* DNDKit */; };
-		B14EE5672C98C52F00BAC898 /* DNDKit in Frameworks */ = {isa = PBXBuildFile; productRef = B14EE5662C98C52F00BAC898 /* DNDKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14EE5672C98C52F00BAC898 /* DNDKit in Frameworks */,
+				B10BD8C42CF8E3620021E82D /* DNDKit in Frameworks */,
 				B14EE5642C98C40300BAC898 /* DNDKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +89,7 @@
 			name = Example;
 			packageProductDependencies = (
 				B14EE5632C98C40300BAC898 /* DNDKit */,
-				B14EE5662C98C52F00BAC898 /* DNDKit */,
+				B10BD8C32CF8E3620021E82D /* DNDKit */,
 			);
 			productName = Example;
 			productReference = B14EE54B2C98C38300BAC898 /* Example.app */;
@@ -120,7 +120,7 @@
 			);
 			mainGroup = B14EE5422C98C38300BAC898;
 			packageReferences = (
-				B14EE5652C98C52F00BAC898 /* XCRemoteSwiftPackageReference "DNDKit" */,
+				B10BD8C22CF8E3620021E82D /* XCLocalSwiftPackageReference "../../DNDKit" */,
 			);
 			productRefGroup = B14EE54C2C98C38300BAC898 /* Products */;
 			projectDirPath = "";
@@ -375,25 +375,20 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		B14EE5652C98C52F00BAC898 /* XCRemoteSwiftPackageReference "DNDKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rchatham/DNDKit";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		B10BD8C22CF8E3620021E82D /* XCLocalSwiftPackageReference "../../DNDKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../DNDKit;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B14EE5632C98C40300BAC898 /* DNDKit */ = {
+		B10BD8C32CF8E3620021E82D /* DNDKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DNDKit;
 		};
-		B14EE5662C98C52F00BAC898 /* DNDKit */ = {
+		B14EE5632C98C40300BAC898 /* DNDKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B14EE5652C98C52F00BAC898 /* XCRemoteSwiftPackageReference "DNDKit" */;
 			productName = DNDKit;
 		};
 /* End XCSwiftPackageProductDependency section */
